@@ -1,0 +1,75 @@
+/* Navbar */
+.navbar {
+    background-image: linear-gradient(to right, #87CEFA, #1E90FF);
+  }
+  
+  /* Links en la Navbar */
+  .navbar-nav .nav-link {
+    color: #f2f2f2;
+  }
+  
+  /* Links activos en la Navbar */
+  .navbar-nav .active > .nav-link,
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show,
+  .dropdown-menu .dropdown-item.active {
+    color: #fff;
+    background-color: #1b262c;
+  }
+
+  
+  
+  /* Input en la Navbar */
+  .navbar-dark .navbar-search input[type="text"] {
+    border-color: #f2f2f2;
+  }
+  
+  /* Input en la Navbar cuando se enfoca */
+  .navbar-dark .navbar-search input[type="text"]:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 173, 181, 0.25);
+  }
+  
+  /* Botón en la Navbar */
+  .navbar-dark .navbar-search .btn {
+    background-color: #00adb5;
+    border-color: #00adb5;
+  }
+  
+  /* Botón en la Navbar cuando se enfoca */
+  .navbar-dark .navbar-search .btn:focus,
+  .navbar-dark .navbar-search .btn:hover {
+    background-color: #1b262c;
+    border-color: #1b262c;
+  }
+/* Modificar el estilo del botón de compra */
+
+.btn {
+	background-color: #00adb5;
+	color: white;
+	transition: background-color 0.2s;
+}
+.btn:hover {
+	background-color: hsl(195, 93%, 39%);
+}
+/* Agregar estilos a la tarjeta de producto */
+.card {
+	transition: box-shadow 0.2s;
+}
+.card:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+	font-size: 1.25rem;
+}
+.card-text {
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+.card-footer {
+	background-color: #f2f2f2;
+}
+body {
+    background-image: url('../assets/img/background.jpg');
+    background-size: cover;
+}
