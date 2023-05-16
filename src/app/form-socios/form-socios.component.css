@@ -1,0 +1,10 @@
+body {
+    background-color: #4fc3f7; /* Azul turquesa */
+    padding: 20px;
+}
+
+.formulario {
+    background-color: #fff; /* Color de fondo del formulario */
+    padding: 20px;
+    border-radius: 10px;
+}

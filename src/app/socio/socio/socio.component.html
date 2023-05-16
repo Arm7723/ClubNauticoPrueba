@@ -1,0 +1,29 @@
+<h1 style="text-align: cent; font-family: sans-serif; color: black;">Listado de Socios</h1>
+
+<table class="table table-striped table-hover" style="background-color: #e6fffc; text-align: center;">
+    <thead>
+      <tr>
+        <th scope="col">IdSocio</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Cod_Postal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let socio of socios" class="table-success">
+        <td>{{socio.idSocio}}</td>
+        <td>{{socio.nombre}}</td>
+        <td>{{socio.apellidos}}</td>
+        <td>{{socio.edad}}</td>
+        <td>{{socio.codigoPostal}}</td>
+        <td>
+         <button class="btn btn-danger me-2" (click)="deleteSocio(socio.idSocio)">Eliminar</button>
+         <button class="btn btn-primary">Modificar</button>
+        </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-success" (click)="redirigir()">Añadir Socio</button>
+
